@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "moduleResolution": "Node",
+    "target": "es5",
+    "module": "ESNext",
+    "allowJs": true,
+    "strict": true,
+    "lib": ["es6", "dom"],
+    "declaration": true,
+    "declarationDir": "dts",
+    "outDir": "dist",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "."
+  },
+  "include": ["src/**/*"]
+}
