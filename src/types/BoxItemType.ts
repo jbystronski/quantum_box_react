@@ -1,4 +1,4 @@
-export interface ItemProps {
+export interface BoxItemType {
   itemData: Object;
   itemKey: number;
 }

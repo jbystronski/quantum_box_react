@@ -44,6 +44,7 @@ export const List: React.FC<VirtualizedComponentProps> = ({
                 <li
                   style={{
                     height: itemHeight + "px",
+                    width: "100%",
                     maxHeight: itemHeight + "px",
                     position: "absolute",
                     left: "0px",

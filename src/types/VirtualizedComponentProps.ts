@@ -1,5 +1,5 @@
 import React from "react";
-import { ItemProps } from "./ItemProps";
+import { BoxItemType } from "./BoxItemType";
 
 export interface VirtualizedComponentProps {
   data: Object[];
@@ -8,5 +8,5 @@ export interface VirtualizedComponentProps {
   containerHeight: number;
   containerWidth: number;
   nextData: () => Object[];
-  Item: React.FC<ItemProps>;
+  Item: React.FC<BoxItemType>;
 }
