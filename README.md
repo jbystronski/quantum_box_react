@@ -46,8 +46,10 @@ import { Grid } from "@quantum_box/react";
   Item={({ itemData, itemKey }) => (
     <div>
       key: {itemKey}
-      <span>List item inner HTML</span>
+      <span>Grid item inner HTML</span>
     </div>
   )}
 />;
+
+<p>See official docs for examples and props description</p>;
 ```
