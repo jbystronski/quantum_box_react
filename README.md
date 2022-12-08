@@ -50,6 +50,9 @@ import { Grid } from "@quantum_box/react";
     </div>
   )}
 />;
-
-<p>See official docs for examples and props description</p>;
 ```
+
+<p>
+  See <a href="https://quantum_box_react.surge.sh/">official docs</a> for
+  examples and props description
+</p>
