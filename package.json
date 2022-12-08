@@ -2,7 +2,7 @@
   "name": "@quantum_box/react",
   "description": "Data virtualization library for React",
   "author": "Jakub Bystroński",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "repository": "jbystronski/quantum_box_react",
   "main": "dist/main.cjs.js",
