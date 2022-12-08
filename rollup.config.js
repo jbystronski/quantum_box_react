@@ -17,7 +17,7 @@ export default [
       react: "React",
       "react-dom": "ReactDOM",
     },
-    input: "src/main.tsx",
+    input: "src/main.ts",
     output: [
       {
         file: packageJson.module,
