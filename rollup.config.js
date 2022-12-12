@@ -13,10 +13,6 @@ const extensions = [".ts", ".tsx", ".js", ".jsx"];
 
 export default [
   {
-    globals: {
-      react: "React",
-      "react-dom": "ReactDOM",
-    },
     input: "src/main.ts",
     output: [
       {
