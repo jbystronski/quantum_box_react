@@ -24,7 +24,9 @@ import { List } from "@quantum_box/react";
   Item={({ itemData, itemKey }) => (
     <div>
       key: {itemKey}
-      <span>List item inner HTML</span>
+      <span>
+        user: {itemData["username"]}, email: {itemdata["email"]}
+      </span>
     </div>
   )}
 />;
@@ -46,7 +48,9 @@ import { Grid } from "@quantum_box/react";
   Item={({ itemData, itemKey }) => (
     <div>
       key: {itemKey}
-      <span>Grid item inner HTML</span>
+      <span>
+        user: {itemData["username"]}, email: {itemdata["email"]}
+      </span>
     </div>
   )}
 />;
