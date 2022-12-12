@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { debounce } from "./debounce";
 import { UseVirtualizedDataHookProps } from "../types/UseVirtualizedDataHookProps";
+import { isPromise } from "./isPromise";
 
 function calculateSet(
   position: number,
@@ -30,11 +31,21 @@ export const useVirtualizedData = ({
     if (target.scrollTop !== 0) setCurrentVisible(null);
 
     if (target.scrollHeight - target.scrollTop - target.clientHeight === 0) {
-      setVData([...vData, ...nextData()]);
-    }
+      const nextDataResult = nextData();
 
+      if (isPromise(nextDataResult)) {
+        nextDataResult.then((data: any) => mergeData(data));
+      } else {
+        mergeData(nextDataResult);
+      }
+    }
     setPosition(target.scrollTop);
   });
+
+  const mergeData = (newData: any) => {
+    if (!Array.isArray(newData)) newData = [];
+    setVData([...vData, ...newData]);
+  };
 
   useEffect(() => {
     setVData(data);
