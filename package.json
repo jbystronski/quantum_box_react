@@ -2,7 +2,7 @@
   "name": "@quantum_box/react",
   "description": "Data virtualization library for React",
   "author": "Jakub Bystroński",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": false,
   "repository": "jbystronski/quantum_box_react",
   "homepage": "https://quantum_box_react.surge.sh",
