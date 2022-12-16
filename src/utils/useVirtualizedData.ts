@@ -6,7 +6,6 @@ import { isPromise } from "./isPromise";
 function calculateSet(
   position: number,
   containerHeight: number,
-
   itemHeight: number
 ) {
   return Array.from(
@@ -27,19 +26,21 @@ export const useVirtualizedData = ({
   const [position, setPosition] = useState<number | null>(null);
 
   const handleScroll = debounce((ev: Event) => {
-    let target = ev.target as Element;
-    if (target.scrollTop !== 0) setCurrentVisible(null);
+    if (ev.target.scrollTop !== 0) setCurrentVisible(null);
 
-    if (target.scrollHeight - target.scrollTop - target.clientHeight === 0) {
+    if (
+      ev.target.scrollHeight -
+        Math.ceil(ev.target.scrollTop) -
+        ev.target.clientHeight ===
+      0
+    ) {
       const nextDataResult = nextData();
 
-      if (isPromise(nextDataResult)) {
-        nextDataResult.then((data: any) => mergeData(data));
-      } else {
-        mergeData(nextDataResult);
-      }
+      isPromise(nextDataResult)
+        ? nextDataResult.then((data: any) => mergeData(data))
+        : mergeData(nextDataResult);
     }
-    setPosition(target.scrollTop);
+    setPosition(ev.target.scrollTop);
   });
 
   const mergeData = (newData: any) => {
