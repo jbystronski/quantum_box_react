@@ -1,6 +1,6 @@
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { debounce } from "./debounce";
-import { UseVirtualizedDataHookProps } from "../types/UseVirtualizedDataHookProps";
+import { UseVirtualizedDataHookProps } from "../types";
 import { isPromise } from "./isPromise";
 
 function calculateSet(
@@ -25,7 +25,7 @@ export const useVirtualizedData = ({
   const [vData, setVData] = useState<Object[] | []>([]);
   const [position, setPosition] = useState<number | null>(null);
 
-  const handleScroll = debounce((ev: Event) => {
+  const handleScroll = debounce((ev: Event & { target: HTMLDivElement }) => {
     if (ev.target.scrollTop !== 0) setCurrentVisible(null);
 
     if (
