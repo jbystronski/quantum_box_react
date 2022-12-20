@@ -1,2 +1,2 @@
-export { List, Grid } from "./components";
-export { BoxItemType } from "./types";
+export { List, Grid, Tree } from "./components";
+export { List as RQBList, Grid as RQBGrid, Tree as RQBTree } from "./types";
