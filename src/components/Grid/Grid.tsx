@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useVirtualizedData } from "src/utils/useVirtualizedData";
-import { GridProps } from "../../types/GridProps";
-import { RowObjectProps } from "../../types/RowObjectProps";
+import { Grid as G } from "src/types";
 
 function parseChunk(
   chunk: number[],
@@ -24,7 +23,7 @@ function parseChunk(
     .reduce((acc, next) => [...acc, ...next], []);
 }
 
-export const Grid: React.FC<GridProps> = ({
+export const Grid: React.FC<G.GridInterface> = ({
   data,
   itemHeight,
   itemWidth,
@@ -40,7 +39,7 @@ export const Grid: React.FC<GridProps> = ({
     containerHeight,
     itemHeight,
   });
-  const [rows, setRows] = useState<RowObjectProps[] | []>([]);
+  const [rows, setRows] = useState<G.Tile[] | []>([]);
 
   useEffect(() => {
     if (!chunk) {

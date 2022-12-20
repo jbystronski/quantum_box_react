@@ -1,8 +1,8 @@
 import React from "react";
 import { useVirtualizedData } from "src/utils/useVirtualizedData";
-import { VirtualizedComponentProps } from "src/types/VirtualizedComponentProps";
+import { List as L } from "src/types";
 
-export const List: React.FC<VirtualizedComponentProps> = ({
+export const List: React.FC<L.ListInterface> = ({
   data,
   itemHeight,
   containerHeight,
