@@ -1,5 +1,5 @@
 export type UseVirtualizedDataHookProps = {
-  data: Object[];
+  data: object[];
   containerHeight: number;
   itemHeight: number;
   nextData: () => any;

@@ -56,6 +56,22 @@ import { Grid } from "@quantum_box/react";
 />;
 ```
 
+  <h4>Tree component</h4>
+
+```jsx
+import { Tree } from "@quantum_box/react";
+
+<Tree
+  containerHeight={600}
+  itemHeight={44}
+  indent={20}
+  data={data}
+  Item={({ id, isLeaf, isOpen, toggle, nestingLevel, itemData }) => (
+    <span>{id}</span>
+  )}
+/>;
+```
+
 <p>
   See <a href="https://quantum_box_react.surge.sh/">official docs</a> for
   examples and props description
