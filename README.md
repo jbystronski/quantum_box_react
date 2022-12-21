@@ -1,3 +1,5 @@
+[![NPM](https://shields.io/npm/v/@quantum_box/react.svg?style=flat-square&color=blueviolet)](https://www.npmjs.com/package/@quantum_box/react)
+
  <h4>Overview</h4>
       <p>React components for data virtualization</p>
       <p>
@@ -10,6 +12,18 @@
         relatively little amount of data to display, however, as it's gets
         bigger and bigger then virtualization effectively solves the problem.
       </p>
+
+  <h4>Install</h4>
+
+```bash
+
+  npm i @quantum_box/react
+
+  // alt
+
+  yarn add @quantum_box/react
+
+```
 
   <h4>List component</h4>
 
