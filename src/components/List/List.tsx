@@ -6,7 +6,6 @@ export const List: React.FC<L.ListInterface> = ({
   data,
   itemHeight,
   containerHeight,
-  containerWidth,
   nextData = () => [],
   Item,
 }) => {
@@ -23,7 +22,7 @@ export const List: React.FC<L.ListInterface> = ({
       onScroll={handleScroll}
       style={{
         height: containerHeight + "px",
-        width: containerWidth + "px",
+        width: "100%",
         overflow: "auto",
       }}
     >
@@ -35,6 +34,7 @@ export const List: React.FC<L.ListInterface> = ({
             position: "relative",
             margin: "0px",
             padding: "0px",
+            width: "100%",
           }}
         >
           {chunk &&

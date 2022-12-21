@@ -28,7 +28,7 @@ export const Grid: React.FC<G.GridInterface> = ({
   itemHeight,
   itemWidth,
   containerHeight,
-  containerWidth,
+
   nextData = () => [],
   Item,
   rowItems,
@@ -55,7 +55,7 @@ export const Grid: React.FC<G.GridInterface> = ({
       onScroll={handleScroll}
       style={{
         height: containerHeight + "px",
-        width: containerWidth + "px",
+        width: "100%",
         overflow: "auto",
       }}
     >
@@ -69,6 +69,7 @@ export const Grid: React.FC<G.GridInterface> = ({
             position: "relative",
             margin: "0px",
             padding: "0px",
+            width: "100%",
           }}
         >
           {rows.length &&

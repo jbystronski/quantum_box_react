@@ -39,7 +39,6 @@ import { Grid } from "@quantum_box/react";
 
 <Grid
   containerHeight={600}
-  containerWidth={800}
   itemHeight={200}
   itemWidth={200}
   rowItems={4}
