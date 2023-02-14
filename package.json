@@ -5,7 +5,7 @@
   "version": "1.0.2",
   "private": false,
   "repository": "jbystronski/quantum_box_react",
-  "homepage": "https://quantum_box_react.surge.sh",
+  "homepage": "https://quantum_box.surge.sh",
   "main": "dist/main.cjs.js",
   "module": "dist/main.esm.js",
   "files": [
