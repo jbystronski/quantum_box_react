@@ -86,6 +86,6 @@ import { Tree } from "@quantum_box/react";
 ```
 
 <p>
-  See <a href="https://quantum_box_react.surge.sh/">official docs</a> for
+  See <a href="https://quantum_box.surge.sh/">official docs</a> for
   examples and props description
 </p>
