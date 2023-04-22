@@ -3,7 +3,11 @@
  <h4>Overview</h4>
       <p>React components for data virtualization</p>
       <p>
-        What's virtualization ? Exposing data bit by a bit, making a smooth browsing experience without latency. New conntent comes in runtime, the other is destroyed. Browser only renders the visible chunk. That what makes it fast and memory happy.</p>
+        What's virtualization ? Exposing data bit by a bit, making a smooth browsing experience without latency. New conntent comes in runtime, the other is destroyed. Browser only renders the visible chunk. Works with any any load of data with exceptional performance.</p>
+        
+        
+        
+        
 
   <h4>Install</h4>
 
