@@ -3,15 +3,7 @@
  <h4>Overview</h4>
       <p>React components for data virtualization</p>
       <p>
-        What's virtualization ? Only a subset of data of a bigger dataset gets
-        exposed to the user. It is later discarded in favor of a new content.
-        User experiences continuity through smooth scrolling and at the same
-        time great load is taken off of your CPU as the browser needs to render
-        only a handful of elements at a time instead of let's say hundreds or
-        thousands of them. It may be an overkill for limited lists with
-        relatively little amount of data to display, however, as it's gets
-        bigger and bigger then virtualization effectively solves the problem.
-      </p>
+        What's virtualization ? Exposing data bit by a bit, making a smooth browsing experience without latency. New conntent comes in runtime, the other is destroyed. Browser only renders the visible chunk. That what makes it fast and memory happy.</p>
 
   <h4>Install</h4>
 
