@@ -3,8 +3,7 @@
  <h4>Overview</h4>
       <p>React components for data virtualization</p>
       <p>
-        What's virtualization ? Exposing data bit by a bit, making a smooth browsing experience without latency. New content comes in in runtime, the other is destroyed. Browser only renders the visible chunk of a list record or a row of a grid. Works with any load of data with exceptional performance. It also supports tree / filesystems virtualization with no overhead, works on the same principle.</p>
-        
+        What's virtualization ? Exposing data bit by a bit, making a smooth browsing experience without latency. New content comes in in runtime, the other is destroyed. Browsers only render the visible chunk of a list, grid or a nested tree of data with great speed. It boosts performance by magnitudes.</p>      
         
         
         
